@@ -1,0 +1,1 @@
+console.log("CodeQuest frontend is working");

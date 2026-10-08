@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Add Problem - CodeQuest</title>
+
+    <link rel="stylesheet" href="../css/add-problem.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <h2>CodeQuest</h2>
+
+        <div class="nav-links">
+
+            <a href="../index.html">Home</a>
+            <a href="../problems.html">Problems</a>
+            <a href="dashboard.html">Admin Dashboard</a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <div class="form-container">
+
+            <h1>Add Problem</h1>
+
+            <p>Create a new DSA problem.</p>
+
+
+            <form id="problemForm">
+
+                <label for="title">
+                    Problem Title
+                </label>
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter problem title"
+                >
+
+
+                <label for="difficulty">
+                    Difficulty
+                </label>
+
+                <select id="difficulty">
+
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+
+                </select>
+
+
+                <label for="description">
+                    Description
+                </label>
+
+                <textarea
+                    id="description"
+                    placeholder="Enter problem description">
+                </textarea>
+
+
+                <label for="inputFormat">
+                    Input Format
+                </label>
+
+                <textarea
+                    id="inputFormat"
+                    placeholder="Enter input format">
+                </textarea>
+
+
+                <label for="outputFormat">
+                    Output Format
+                </label>
+
+                <textarea
+                    id="outputFormat"
+                    placeholder="Enter output format">
+                </textarea>
+
+
+                <label for="constraints">
+                    Constraints
+                </label>
+
+                <textarea
+                    id="constraints"
+                    placeholder="Enter constraints">
+                </textarea>
+
+
+                <label for="sampleInput">
+                    Sample Input
+                </label>
+
+                <textarea
+                    id="sampleInput"
+                    placeholder="Enter sample input">
+                </textarea>
+
+
+                <label for="sampleOutput">
+                    Sample Output
+                </label>
+
+                <textarea
+                    id="sampleOutput"
+                    placeholder="Enter sample output">
+                </textarea>
+
+
+                <button type="submit">
+                    Create Problem
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="../js/add-problem.js"></script>
+
+</body>
+
+</html>

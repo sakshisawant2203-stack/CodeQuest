@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f8fafc;
+
+    color: #222;
+}
+
+
+/* Login box */
+
+.login-container {
+    width: 350px;
+
+    margin: 100px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+
+/* CodeQuest */
+
+.login-container h1 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+
+/* Login heading */
+
+.login-container h2 {
+    margin-bottom: 5px;
+}
+
+
+/* Description */
+
+.login-container > p {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+
+    text-align: left;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+
+/* Inputs */
+
+input {
+    width: 100%;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+
+/* Login button */
+
+button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Register link */
+
+.register-link {
+    margin-top: 20px;
+
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #2563eb;
+
+    text-decoration: none;
+}

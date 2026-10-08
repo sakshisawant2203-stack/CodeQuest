@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-color: #f8fafc;
+    color: #222;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: white;
+
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar h2 {
+    margin: 0;
+
+    color: #2563eb;
+}
+
+.nav-links a {
+    margin-left: 25px;
+
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+
+/* Admin */
+
+.admin-container {
+    width: 900px;
+
+    margin: 50px auto;
+}
+
+.admin-container h1 {
+    margin-bottom: 5px;
+}
+
+.admin-container > p {
+    color: #666;
+}
+
+
+/* Button */
+
+.admin-button {
+    display: inline-block;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    padding: 11px 18px;
+
+    background-color: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.admin-button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Problem card */
+
+.admin-problem-card {
+    background-color: white;
+
+    padding: 20px;
+
+    margin-top: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.admin-problem-card h3 {
+    margin-top: 0;
+}
+
+
+/* Admin buttons */
+
+.admin-problem-card button {
+    padding: 8px 14px;
+
+    margin-right: 8px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #f59e0b;
+    color: white;
+}
+
+.delete-button {
+    background-color: #dc2626;
+    color: white;
+}
+
+.testcase-button {
+    background-color: #16a34a;
+    color: white;
+}

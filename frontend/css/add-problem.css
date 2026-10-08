@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f8fafc;
+
+    color: #222;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: white;
+
+    padding: 15px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar h2 {
+    margin: 0;
+
+    color: #2563eb;
+}
+
+.nav-links a {
+    margin-left: 25px;
+
+    text-decoration: none;
+
+    color: #333;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+
+/* Form */
+
+.form-container {
+    width: 700px;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ddd;
+}
+
+.form-container h1 {
+    margin-bottom: 5px;
+}
+
+.form-container p {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+
+    margin-top: 18px;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+/* Inputs */
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+
+    resize: vertical;
+}
+
+
+/* Button */
+
+button {
+    margin-top: 25px;
+
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}

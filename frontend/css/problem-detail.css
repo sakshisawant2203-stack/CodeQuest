@@ -1,0 +1,790 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f7f8fa;
+
+    color: #1f2937;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+
+    height: 60px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 28px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    color: #2563eb;
+}
+
+
+.navbar nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.navbar nav a {
+
+    text-decoration: none;
+
+    color: #374151;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+
+.navbar nav a:hover {
+
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.problem-page {
+
+    display: grid;
+
+    grid-template-columns: 48% 52%;
+
+    height: calc(100vh - 60px);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT PROBLEM PANEL
+========================================================= */
+
+.problem-panel {
+
+    background: #ffffff;
+
+    border-right: 1px solid #dfe3e8;
+
+    overflow-y: auto;
+
+    padding: 30px;
+}
+
+
+.problem-content {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+.hidden {
+
+    display: none !important;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.loading {
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    padding: 50px 0;
+
+    text-align: center;
+
+    color: #374151;
+}
+
+
+/* =========================================================
+   PROBLEM HEADER
+========================================================= */
+
+.problem-header {
+
+    margin-bottom: 28px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    padding-bottom: 20px;
+}
+
+
+.problem-header h1 {
+
+    font-size: 30px;
+
+    color: #111827;
+
+    margin-bottom: 12px;
+}
+
+
+.problem-meta {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.difficulty {
+
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    background: #dcfce7;
+
+    color: #15803d;
+}
+
+
+.solved-count {
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PROBLEM SECTIONS
+========================================================= */
+
+.problem-section {
+
+    margin-bottom: 28px;
+}
+
+
+.problem-section h2,
+.sample-section h2,
+.testcase-section h2 {
+
+    font-size: 20px;
+
+    color: #111827;
+
+    margin-bottom: 12px;
+}
+
+
+.problem-section p {
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #374151;
+
+    white-space: pre-line;
+}
+
+
+/* =========================================================
+   SAMPLE
+========================================================= */
+
+.sample-section {
+
+    margin-bottom: 30px;
+}
+
+
+.sample-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+.sample-box {
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 7px;
+
+    background: #f9fafb;
+
+    overflow: hidden;
+}
+
+
+.sample-box h3 {
+
+    font-size: 13px;
+
+    color: #4b5563;
+
+    padding: 10px 12px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.sample-box pre {
+
+    padding: 14px;
+
+    font-family: Consolas, monospace;
+
+    font-size: 14px;
+
+    white-space: pre-wrap;
+
+    overflow-x: auto;
+
+    color: #111827;
+}
+
+
+/* =========================================================
+   TEST CASES
+========================================================= */
+
+.testcase-section {
+
+    padding-bottom: 30px;
+}
+
+
+.testcase-card {
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    margin-bottom: 14px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+
+.testcase-header {
+
+    padding: 11px 14px;
+
+    background: #f9fafb;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.testcase-title {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #111827;
+}
+
+
+.testcase-label {
+
+    font-size: 12px;
+
+    color: #6b7280;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+
+    display: block;
+}
+
+
+.testcase-body {
+
+    padding: 14px;
+}
+
+
+.testcase-body pre {
+
+    background: #f3f4f6;
+
+    border-radius: 5px;
+
+    padding: 11px;
+
+    margin-bottom: 12px;
+
+    font-family: Consolas, monospace;
+
+    font-size: 13px;
+
+    white-space: pre-wrap;
+
+    overflow-x: auto;
+}
+
+
+.testcase-loading {
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   RIGHT EDITOR PANEL
+========================================================= */
+
+.editor-panel {
+
+    background: #f5f6f8;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   EDITOR HEADER
+========================================================= */
+
+.editor-header {
+
+    min-height: 62px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #dfe3e8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 10px 15px;
+}
+
+
+.language-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.language-area label {
+
+    font-size: 13px;
+
+    color: #6b7280;
+
+    font-weight: 600;
+}
+
+
+#language {
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    padding: 8px 32px 8px 10px;
+
+    font-size: 14px;
+
+    color: #111827;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+
+#language:focus {
+
+    border-color: #2563eb;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.submit-button {
+
+    border: none;
+
+    background: #16a34a;
+
+    color: white;
+
+    padding: 9px 18px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+
+.submit-button:hover {
+
+    background: #15803d;
+}
+
+
+.submit-button:disabled {
+
+    background: #9ca3af;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   CODE EDITOR
+========================================================= */
+
+.editor-container {
+
+    flex: 1;
+
+    min-height: 0;
+
+    padding: 12px;
+}
+
+
+#sourceCode {
+
+    width: 100%;
+
+    height: 100%;
+
+    resize: none;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    padding: 18px;
+
+    font-family: Consolas, "Courier New", monospace;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    outline: none;
+
+    tab-size: 4;
+}
+
+
+#sourceCode:focus {
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================================================
+   SUBMISSION MESSAGE
+========================================================= */
+
+.submission-message {
+
+    margin: 0 12px 10px;
+
+    padding: 11px 14px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+.submission-message.success {
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    border: 1px solid #bbf7d0;
+}
+
+
+.submission-message.error {
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    border: 1px solid #fecaca;
+}
+
+
+.submission-message.info {
+
+    background: #dbeafe;
+
+    color: #1e40af;
+
+    border: 1px solid #bfdbfe;
+}
+
+
+/* =========================================================
+   EDITOR TEST CASE PANEL
+========================================================= */
+
+.editor-testcase-panel {
+
+    background: #ffffff;
+
+    border-top: 1px solid #dfe3e8;
+
+    min-height: 180px;
+
+    max-height: 240px;
+
+    overflow-y: auto;
+}
+
+
+.testcase-panel-header {
+
+    padding: 12px 15px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.testcase-panel-header h2 {
+
+    font-size: 15px;
+
+    color: #111827;
+}
+
+
+.selected-testcase {
+
+    padding: 14px 15px;
+}
+
+
+.selected-testcase h3 {
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+
+    color: #374151;
+}
+
+
+.selected-testcase pre {
+
+    background: #f3f4f6;
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    font-family: Consolas, monospace;
+
+    font-size: 13px;
+
+    white-space: pre-wrap;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .problem-page {
+
+        grid-template-columns: 1fr;
+
+        height: auto;
+
+        overflow: visible;
+    }
+
+
+    .problem-panel {
+
+        border-right: none;
+
+        border-bottom: 1px solid #dfe3e8;
+
+        max-height: none;
+
+        overflow: visible;
+    }
+
+
+    .editor-panel {
+
+        min-height: 700px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+
+        padding: 0 15px;
+    }
+
+
+    .navbar nav {
+
+        gap: 10px;
+    }
+
+
+    .navbar nav a {
+
+        font-size: 13px;
+    }
+
+
+    .problem-panel {
+
+        padding: 20px;
+    }
+
+
+    .problem-header h1 {
+
+        font-size: 24px;
+    }
+
+
+    .sample-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .editor-header {
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+        flex-direction: column;
+    }
+
+
+    .submit-button {
+
+        width: 100%;
+    }
+
+}

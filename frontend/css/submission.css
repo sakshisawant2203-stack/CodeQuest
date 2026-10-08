@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-color: #f8fafc;
+    color: #222;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: white;
+
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar h2 {
+    margin: 0;
+
+    color: #2563eb;
+}
+
+.nav-links a {
+    margin-left: 25px;
+
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+
+/* Submissions */
+
+.submissions-container {
+    width: 900px;
+
+    margin: 50px auto;
+}
+
+.submissions-container h1 {
+    margin-bottom: 5px;
+}
+
+.submissions-container > p {
+    color: #666;
+}
+
+
+/* Submission card */
+
+.submission-card {
+    background-color: white;
+
+    padding: 20px;
+
+    margin-top: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+/* Problem name */
+
+.submission-card h3 {
+    margin-top: 0;
+}
+
+
+/* Details */
+
+.submission-details {
+    display: flex;
+    gap: 30px;
+
+    margin-top: 15px;
+}
+
+.submission-details p {
+    margin: 0;
+}
+
+
+/* Status */
+
+.accepted {
+    color: green;
+    font-weight: bold;
+}
+
+.wrong {
+    color: red;
+    font-weight: bold;
+}
+
+.running {
+    color: orange;
+    font-weight: bold;
+}
